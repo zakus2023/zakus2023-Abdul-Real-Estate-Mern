@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express' //import express to create the router
 import { test } from '../contollers/user.controller.js';
 
 
