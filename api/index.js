@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import userRouter from "./Routes/user.route.js"; // importing the user route created in the Routes folder
 
 //to use the env variable
 dotenv.config();
@@ -26,3 +27,5 @@ const app = express();
 app.listen(port, () => {
   console.log("App is listening on port: " + port);
 });
+
+app.use("/api/user",userRouter);

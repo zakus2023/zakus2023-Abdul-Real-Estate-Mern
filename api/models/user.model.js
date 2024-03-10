@@ -25,4 +25,3 @@ const userSchemer = new mongoose.Schema({
 const User = mongoose.model('User', userSchemer);
 
 export default User; // exporting the user model so that you can use it anywhere in the project
-
